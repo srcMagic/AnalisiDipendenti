@@ -1,5 +1,5 @@
 @FunctionalInterface
-public interface FiltroDipendente {
+public interface FiltroDipendente<Dipendente> {
 
     boolean filtraDipendente(Dipendente dipendente);
 
