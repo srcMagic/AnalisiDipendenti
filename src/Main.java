@@ -19,7 +19,7 @@ public class Main {
         List<Dipendente> listaDipendenti = Arrays.asList(dipendente, dipendente1, dipendente2, dipendente3);
         //Uso di interfacce funzionali ed espressioni lambda
         FiltroDipendente filtroDipendente = d -> d.getEta() > 50;
-        filtroDipendente.filtraDipendente(dipendente1);
+        System.out.println(filtroDipendente.filtraDipendente(dipendente1));
         List<Dipendente> dipendentiOverTrenta = listaDipendenti.stream().filter(d -> d.getEta() > 30).toList();
         System.out.println("Dipendenti over 30 : ");
         dipendentiOverTrenta.forEach(System.out::println);
