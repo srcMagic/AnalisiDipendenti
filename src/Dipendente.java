@@ -5,7 +5,7 @@ public class Dipendente {
     private double stipendio;
     private Dipartimento dipartimento;
 
-    public Dipendente(String nome){
+    public Dipendente(String nome) {
         this.nome = nome;
     }
 
