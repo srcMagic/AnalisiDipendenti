@@ -19,11 +19,11 @@ public class Main {
         List<Dipendente> listaDipendenti = Arrays.asList(dipendente, dipendente1, dipendente2, dipendente3);
         //Uso di interfacce funzionali ed espressioni lambda
         List<Dipendente> dipendentiOverTrenta = listaDipendenti.stream().filter(d -> d.getEta() > 30).toList();
-        System.out.println("Dipendeti over 30 : ");
+        System.out.println("Dipendenti over 30 : ");
         dipendentiOverTrenta.forEach(System.out::println);
 
         //Uso dei Method Reference e Constructor Reference
-        System.out.println("Dipendeti ordinati per nome :");
+        System.out.println("Dipendenti ordinati per nome :");
         listaDipendenti.sort(Comparator.comparing(Dipendente::getNome));
         listaDipendenti.forEach(System.out::println);
 
